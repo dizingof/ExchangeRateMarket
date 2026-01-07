@@ -1,0 +1,118 @@
+.header {
+  background: linear-gradient(90deg, var(--primary), var(--primary2));
+  color: white;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.15);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: white;
+  outline: none;
+}
+
+.search::placeholder { color: rgba(255,255,255,0.75); }
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ghostButton {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: white;
+  cursor: pointer;
+}
+
+.primaryButton {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.meta {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.85;
+  display: flex;
+  justify-content: space-between;
+}
+
+.metaRight {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search {
+    width: 360px;
+  }
+
+  .metaRight { display: inline; }
+}

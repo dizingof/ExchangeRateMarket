@@ -1,0 +1,29 @@
+.page {
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.left { }
+
+.right {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}

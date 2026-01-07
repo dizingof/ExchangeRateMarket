@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.statCard { }
+.statTitle { font-size: 14px; color: var(--muted); }
+.statValue { margin-top: 8px; font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+.statSubtitle { margin-top: 6px; font-size: 12px; color: var(--muted); }
+
+@media (min-width: 640px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
