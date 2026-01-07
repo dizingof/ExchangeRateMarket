@@ -1,0 +1,93 @@
+.rangeGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.rangeButton {
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #334155;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rangeButton:hover {
+  background: #f1f5f9;
+}
+
+.rangeButtonActive {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.chartBox {
+  height: 260px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 8px;
+}
+
+/* Сделаем recharts аккуратнее под наш стиль */
+.chartBox :global(.recharts-cartesian-grid-horizontal line),
+.chartBox :global(.recharts-cartesian-grid-vertical line) {
+  stroke: rgba(15, 23, 42, 0.08);
+}
+
+.chartBox :global(.recharts-text) {
+  fill: #64748b;
+  font-size: 12px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.footerItem {
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.footerLabel {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.footerValue {
+  margin-top: 4px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.footerValuePositive {
+  margin-top: 4px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: #16a34a;
+}
+
+.footerValueNegative {
+  margin-top: 4px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: #dc2626;
+}
