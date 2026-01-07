@@ -8,7 +8,7 @@ export function TopHeader() {
           <div className={styles.brand}>
             <div className={styles.logo}>ER</div>
             <div>
-              <div className={styles.title}>ExchangeRateMarket</div>
+              <div className={styles.title}>ExchangeRateMarketTest</div>
               <div className={styles.subtitle}>Exchange rates in banks</div>
             </div>
           </div>
